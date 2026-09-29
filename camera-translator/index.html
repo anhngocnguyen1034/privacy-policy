@@ -16,35 +16,54 @@
     choose to use our Service, you agree to the collection and use of
     information in accordance with this policy.
 </p> <p>
-    <strong>The app contains no advertising and no advertising SDKs.</strong>
+    <strong>The app contains no advertising and no advertising SDKs. There are
+    no in-app purchases and no subscriptions. You do not create an account and
+    you do not sign in. We do not sell your personal information and we do not
+    share it for advertising or cross-context behavioural advertising.</strong>
 </p>
 
 <p><strong>What the App Does On Your Device</strong></p> <p>
     Translation, text recognition from images, and language detection run
-    <strong>on your device</strong> using Google ML Kit. Language models are
-    downloaded once and then work offline. The photos you translate, the text
-    recognised in them, and the screen images captured for on-screen
-    translation are processed on your device and are <strong>not uploaded to
-    us and not stored on any server we operate</strong>.
-</p> <p>
-    Your translation history, saved bookmarks, and dictionary lookup history
-    are stored only in the app's private storage on your device. Uninstalling
-    the app deletes them. We have no copy of them.
+    <strong>on your device</strong> using Google ML Kit. The language and text
+    recognition models are downloaded once from Google's servers through Google
+    Play services, and after that they work offline. The photos and documents
+    you translate, the text recognised in them, and the screen images captured
+    for on-screen translation are processed on your device and are <strong>not
+    uploaded to us and not stored on any server we operate</strong>.
+</p>
+
+<p><strong>What Is Stored On Your Device</strong></p> <p>
+    The following are stored only in the app's private storage on your device:
+</p>
+<ul>
+    <li>Your translation and scan history, including a small thumbnail of a
+        scanned image, kept up to a fixed maximum number of recent entries.</li>
+    <li>Your saved bookmarks and your dictionary lookup history.</li>
+    <li>Your settings, such as the interface language, the chosen translation
+        languages, dark mode, offline mode, and voice options.</li>
+</ul> <p>
+    You can delete these from inside the app using the clear option on the
+    history and bookmark screens. Uninstalling the app deletes all of them. We
+    have no copy of them.
 </p>
 
 <p><strong>Permissions We Request, and Why</strong></p>
 <ul>
     <li><strong>Camera</strong> — to show the live preview and take the photo
-        you want translated. Used only while a camera screen is open.</li>
+        you want translated. Used only while a camera screen is open. Photos
+        taken for translation are not saved to your gallery unless you ask for
+        them to be saved.</li>
     <li><strong>Microphone</strong> — to capture speech for voice translation
         and conversation mode. Used only while you are actively recording.
         Speech recognition is performed by the speech service built into your
         Android device, which may send the audio to its provider (usually
-        Google) for processing under that provider's own privacy policy.</li>
+        Google) for processing under that provider's own privacy policy. We do
+        not record, keep, or transmit the audio ourselves.</li>
     <li><strong>Screen capture</strong> — for on-screen translation. Android
         asks for your explicit consent each time, and a notification stays
         visible for as long as capture is active. Captured frames are read for
-        text and then discarded.</li>
+        text and then discarded; they are never written to storage or sent
+        anywhere.</li>
     <li><strong>Display over other apps</strong> — to show the floating
         translation bubble and translated overlays.</li>
     <li><strong>Internet and network state</strong> — to download language
@@ -52,19 +71,79 @@
         online.</li>
     <li><strong>Notifications</strong> — to show the required ongoing
         notification while screen translation is running.</li>
+    <li><strong>Run a foreground service and keep the device awake</strong> —
+        so that on-screen translation keeps working while it is switched on and
+        the screen does not sleep in the middle of it.</li>
+</ul> <p>
+    The app does not request access to your photo library, your files, your
+    contacts, your location, or your phone identifiers.
+</p>
+
+<p><strong>Photos and Documents You Choose</strong></p> <p>
+    When you pick an image from your gallery, or open a PDF, DOCX, or PPTX file
+    to translate, you choose the file through the Android system picker and the
+    app receives only that one file. No storage permission is needed and the
+    app cannot browse the rest of your files. The text is extracted and
+    translated on your device, and the file is not uploaded to us.
+</p> <p>
+    If you tap save on a translated image, the app writes that image to your
+    gallery in a folder named Translator. If you tap share, the app hands the
+    image or text to the app you choose. Both happen only when you ask.
+</p>
+
+<p><strong>Information Sent Off Your Device</strong></p>
+<ul>
+    <li><strong>Dictionary lookups.</strong> When you look up a word in the
+        Dictionary, that single word is sent to the Wikimedia REST API at
+        <a href="https://en.wiktionary.org/">en.wiktionary.org</a> to retrieve
+        its definition. No account information, device identifier, or other
+        personal data is attached to that request. Wikimedia's handling of the
+        request is governed by the
+        <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia
+        Foundation Privacy Policy</a>.</li>
+    <li><strong>Speech recognition.</strong> Your recorded speech is passed to
+        the speech recognition service on your device, which may send it to its
+        provider (usually Google) to be transcribed.</li>
+    <li><strong>Reading text aloud.</strong> When you tap the speaker button,
+        the text is passed to the text-to-speech engine installed on your
+        device (usually Google's). That engine may send the text to its
+        provider to synthesise the voice, and may download voice data.</li>
+    <li><strong>Language model downloads.</strong> ML Kit downloads translation
+        and text recognition models from Google's servers through Google Play
+        services.</li>
+    <li><strong>Analytics and crash reports.</strong> Described in the two
+        sections below.</li>
+    <li><strong>Feedback.</strong> When you contact us using the feedback
+        option in Settings, your message is sent to us by email using your own
+        email app, so we receive whatever address you send it from, together
+        with whatever you write.</li>
+    <li><strong>Rating the app.</strong> If you choose to rate the app, the
+        rating is handled by Google Play. We receive only what Google Play
+        shows every developer.</li>
 </ul>
 
-<p><strong>Information Sent Off Your Device</strong></p> <p>
-    When you look up a word in the Dictionary, that single word is sent to
-    <a href="https://dictionaryapi.dev/">dictionaryapi.dev</a> to retrieve its
-    definition. No account information, device identifier, or other personal
-    data is attached to that request.
+<p><strong>Usage Statistics</strong></p> <p>
+    We collect anonymous usage statistics through Google Analytics for Firebase
+    so we can decide what to improve. These are events such as which screen was
+    opened, which button was tapped, which language pair was selected, whether
+    a translation succeeded, and the <em>length</em> in characters of the text
+    you translated or looked up.
 </p> <p>
-    When you contact us using the feedback option in Settings, your message is
-    sent to us by email using your own email app, so we receive whatever
-    address you send it from.
-</p> <p>
-    The app has no in-app purchases and no subscriptions. It is entirely free.
+    These statistics <strong>never include the content of what you translate</strong>
+    — not the text, not the recognised words, not the images, not the audio, and
+    not the documents you open. Google attaches to them a per-installation app
+    instance identifier and general technical information such as device model,
+    operating system version, app version, and approximate country derived from
+    the IP address. The app instance identifier is reset if you uninstall the
+    app or clear its data.
+</p>
+
+<p><strong>Log Data</strong></p> <p>
+    If the app crashes or hits an error, we collect diagnostic data through
+    Firebase Crashlytics. This may include your device's IP address, device
+    name, operating system version, the app's configuration at the time, the
+    time and date, the stack trace of the fault, and other statistics. We use
+    it to fix faults, not to identify you.
 </p>
 
 <p><strong>Third-Party Services</strong></p> <p>
@@ -76,20 +155,31 @@
     <li><a href="https://firebase.google.com/policies/analytics">Google Analytics for Firebase</a></li>
     <li><a href="https://firebase.google.com/support/privacy/">Firebase Crashlytics</a></li>
     <li><a href="https://developers.google.com/ml-kit/terms">Google ML Kit</a></li>
-    <li><a href="https://dictionaryapi.dev/">dictionaryapi.dev</a></li>
+    <li>The speech recognition and text-to-speech services installed on your device, usually <a href="https://www.google.com/policies/privacy/">Google's</a></li>
+    <li><a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia Foundation</a> (Wiktionary definitions)</li>
 </ul>
 
-<p><strong>Log Data</strong></p> <p>
-    If the app crashes or hits an error, we collect diagnostic data through
-    Firebase Crashlytics. This may include your device's IP address, device
-    name, operating system version, the app's configuration at the time, the
-    time and date, and other statistics. We use it to fix faults, not to
-    identify you.
-</p> <p>
-    We also collect anonymous usage statistics through Google Analytics for
-    Firebase — which features are opened and how often — so we can decide what
-    to improve. These statistics do not include the content of what you
-    translate.
+<p><strong>How Long Data Is Kept, and How to Delete It</strong></p> <p>
+    History, bookmarks, dictionary history, thumbnails, and settings stay on
+    your device until you clear them in the app or uninstall it. Usage
+    statistics and crash reports are held by Google on our behalf under
+    Firebase's retention settings, which we keep at Google's default period,
+    after which they are deleted or aggregated. If you want us to delete the
+    diagnostic and usage data associated with your installation, write to the
+    address at the end of this policy and tell us when and on what device you
+    used the app, and we will delete what we can identify.
+</p>
+
+<p><strong>Your Rights</strong></p> <p>
+    Depending on where you live, you may have the right to ask what personal
+    information we hold about you, to receive a copy of it, to have it
+    corrected or deleted, to object to or restrict its processing, and to
+    withdraw consent. Because the app has no accounts, the only data we can
+    connect to a person is what you send us by email and the pseudonymous
+    diagnostic data described above. To exercise any of these rights, contact
+    us at the address below. You may also complain to your local data
+    protection authority. Our legal basis for the diagnostic and usage data is
+    our legitimate interest in keeping the app working and improving it.
 </p>
 
 <p><strong>Cookies</strong></p> <p>
@@ -107,7 +197,8 @@
 
 <p><strong>Security</strong></p> <p>
     We value your trust in providing us your personal information and strive
-    to use commercially acceptable means of protecting it. But no method of
+    to use commercially acceptable means of protecting it. Requests the app
+    makes to the internet are sent over encrypted connections. But no method of
     transmission over the internet, and no method of electronic storage, is
     100% secure, so we cannot guarantee absolute security.
 </p>
@@ -133,7 +224,7 @@
     review this page periodically. We will notify you of any changes by
     posting the new Privacy Policy on this page.
 </p> <p>
-    This policy is effective as of 2026-09-26.
+    This policy is effective as of 2026-09-29.
 </p>
 
 <p><strong>Contact Us</strong></p> <p>
