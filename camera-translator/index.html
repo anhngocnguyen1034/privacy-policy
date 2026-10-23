@@ -16,10 +16,11 @@
     choose to use our Service, you agree to the collection and use of
     information in accordance with this policy.
 </p> <p>
-    <strong>The app contains no advertising and no advertising SDKs. There are
-    no in-app purchases and no subscriptions. You do not create an account and
-    you do not sign in. We do not sell your personal information and we do not
-    share it for advertising or cross-context behavioural advertising.</strong>
+    <strong>The app is free and is supported by advertising, which is served by
+    Google AdMob and described in the Advertising section below. There are no
+    in-app purchases and no subscriptions. You do not create an account and you
+    do not sign in. We do not sell your personal information, and the content of
+    what you translate is never shared with advertisers.</strong>
 </p>
 
 <p><strong>What the App Does On Your Device</strong></p> <p>
@@ -73,12 +74,19 @@
         online.</li>
     <li><strong>Notifications</strong> — to show the required ongoing
         notification while screen translation is running.</li>
+    <li><strong>Advertising ID</strong> (com.google.android.gms.permission.AD_ID)
+        — declared by the advertising SDK so that it can read the resettable
+        advertising identifier Android provides. See the Advertising section
+        below.</li>
     <li><strong>Run a foreground service and keep the device awake</strong> —
         so that on-screen translation keeps working while it is switched on and
         the screen does not sleep in the middle of it.</li>
 </ul> <p>
     The app does not request access to your photo library, your files, your
-    contacts, your location, or your phone identifiers.
+    contacts, your location, or hardware identifiers such as your IMEI or serial
+    number. The only identifiers involved are the resettable advertising
+    identifier described under Advertising and the per-installation analytics
+    identifier described under Usage Statistics.
 </p>
 
 <p><strong>Photos and Documents You Choose</strong></p> <p>
@@ -113,6 +121,9 @@
     <li><strong>Language model downloads.</strong> ML Kit downloads translation
         and text recognition models from Google's servers through Google Play
         services.</li>
+    <li><strong>Advertising.</strong> Requests sent to Google AdMob to fetch
+        the ads shown in the app, described in the Advertising section
+        below.</li>
     <li><strong>Analytics and crash reports.</strong> Described in the two
         sections below.</li>
     <li><strong>Feedback.</strong> When you contact us using the feedback
@@ -148,12 +159,49 @@
     it to fix faults, not to identify you.
 </p>
 
+<p><strong>Advertising</strong></p> <p>
+    The app is free and shows ads supplied by <strong>Google AdMob</strong>.
+    They appear in a small number of places: once over the splash screen as the
+    app opens, in a single slot at the bottom of the Home screen, and
+    occasionally when you leave a translation screen. There are no ads inside
+    the camera, voice, or on-screen translation workflows themselves.
+</p> <p>
+    To select and measure those ads, Google receives your device's
+    <strong>advertising identifier</strong> — a resettable identifier Android
+    provides for this purpose — together with technical information such as
+    device model, operating system version, app version, approximate location
+    derived from the IP address, and which ads were requested, shown, or
+    tapped. <strong>The content of what you translate is never sent to Google
+    AdMob or to any advertiser</strong>: not the text, not the recognised words,
+    not the images, not the documents, and not the audio.
+</p> <p>
+    If you are in the European Economic Area, the United Kingdom, or
+    Switzerland, the app asks for your consent before any personalised ad is
+    served, using Google's User Messaging Platform. You can change or withdraw
+    that choice at any time under <em>Settings &rarr; Privacy options</em>. If
+    you refuse, the app still shows ads, but non-personalised ones chosen from
+    the context rather than from your advertising identifier. Where you do
+    consent to personalised ads, your advertising identifier may be used for
+    cross-context behavioural advertising by Google and its advertising
+    partners; withdrawing consent stops that.
+</p> <p>
+    On any device you can also limit this yourself in Android under
+    <em>Settings &rarr; Privacy &rarr; Ads</em>, where you can reset your
+    advertising identifier or delete it entirely. If you delete it, the app
+    keeps working and simply shows non-personalised ads. How Google uses the
+    information it collects through AdMob is described in
+    <a href="https://policies.google.com/technologies/partner-sites">How Google
+    uses information from sites or apps that use our services</a>.
+</p>
+
 <p><strong>Third-Party Services</strong></p> <p>
     The app uses the following services, each governed by its own privacy
     policy:
 </p>
 <ul>
     <li><a href="https://www.google.com/policies/privacy/">Google Play Services</a></li>
+    <li><a href="https://support.google.com/admob/answer/6128543">Google AdMob</a>,
+        and the Google User Messaging Platform it uses to ask for consent</li>
     <li><a href="https://firebase.google.com/policies/analytics">Google Analytics for Firebase</a></li>
     <li><a href="https://firebase.google.com/support/privacy/">Firebase Crashlytics</a></li>
     <li><a href="https://developers.google.com/ml-kit/terms">Google ML Kit</a></li>
@@ -226,7 +274,7 @@
     review this page periodically. We will notify you of any changes by
     posting the new Privacy Policy on this page.
 </p> <p>
-    This policy is effective as of 2026-09-29.
+    This policy is effective as of 2026-10-22.
 </p>
 
 <p><strong>Contact Us</strong></p> <p>
