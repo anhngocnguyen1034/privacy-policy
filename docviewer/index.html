@@ -39,7 +39,7 @@
 
 <h1>Privacy Policy</h1>
 <div class="subtitle">DocViewer &middot; <code>com.nnastudio.docviewer</code> &middot; published by NNA Studio</div>
-<div class="updated">Effective date: 1 November 2026</div>
+<div class="updated">Effective date: 4 November 2026</div>
 
 <p>
   NNA Studio built <strong>DocViewer</strong> as a free application for reading and editing PDF, Word,
@@ -49,10 +49,10 @@
 
 <div class="box">
   <strong>Short version:</strong> your documents are opened, edited, converted and saved on your device
-  and are never uploaded by the app. There is no account and no cloud sync. The app shows ads through
-  <strong>Google AdMob</strong> and uses <strong>Google Firebase Remote Config</strong> to switch ads on or
-  off; these Google services receive some device information, described below. NNA Studio does not sell
-  your data and does not run a server of its own.
+  and are never uploaded by the app. There is no account and no cloud sync.
+  <strong>This version of the app shows no ads</strong> and does not read your advertising ID. The only
+  network request it makes is to <strong>Google Firebase Remote Config</strong>, to download a few
+  settings when the app starts. NNA Studio does not sell your data and does not run a server of its own.
 </div>
 
 <h2>Your documents</h2>
@@ -72,19 +72,14 @@
 <h2>Information collected by third parties</h2>
 <p>
   The app never asks for your name, email address, phone number, contacts or location, and there is no
-  registration or user profile. The following Google services collect information automatically:
+  registration or user profile. One Google service collects information automatically:
 </p>
 <ul>
   <li>
-    <strong>Google AdMob</strong> (advertising) &mdash; your device's advertising ID, IP address, device
-    model and operating system, and how you interact with ads. This is used to show ads, limit how often
-    the same ad appears, measure ad performance and prevent fraud, and, where you allow it, to show ads
-    based on your interests.
-  </li>
-  <li>
-    <strong>Firebase Remote Config</strong> &mdash; when the app starts it downloads a few settings (for
-    example whether ads are enabled). To do so Firebase receives an app instance ID and basic technical
-    information about the device. No document content is sent.
+    <strong>Firebase Remote Config</strong> &mdash; when the app starts it downloads a few settings that
+    let us change how the app behaves without publishing an update. To do so Firebase receives an app
+    instance ID and basic technical information about the device, such as the device model, operating
+    system version and language. No document content is sent, and your advertising ID is not used.
   </li>
 </ul>
 <p>
@@ -94,22 +89,18 @@
   <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
 </p>
 
-<h2>Advertising and your choices</h2>
+<h2>Advertising</h2>
 <p>
-  DocViewer is free and is supported by ads: an ad card in the document list on the home screen and an
-  occasional full-screen ad after you finish a tool or close a document. Full-screen ads are limited in
-  how often they can appear and never interrupt a task in progress.
+  <strong>DocViewer shows no ads.</strong> The app does not request the Android advertising ID
+  permission, so it cannot read your advertising ID, and nothing you do in the app is used to select or
+  measure ads.
 </p>
-<ul>
-  <li>
-    If you are in the European Economic Area, the United Kingdom or Switzerland, the app asks for your
-    consent before personalised ads are shown.
-  </li>
-  <li>
-    On any Android device you can reset your advertising ID or opt out of personalised ads in your
-    device's <strong>Settings &rarr; Privacy &rarr; Ads</strong> (the exact path depends on your device).
-  </li>
-</ul>
+<p>
+  If a future version introduces ads, this page will be updated before that version is published, the
+  Data safety information on Google Play will be updated with it, and &mdash; in the European Economic
+  Area, the United Kingdom and Switzerland &mdash; you will be asked for consent before any personalised
+  ad is shown.
+</p>
 
 <h2>Data stored on your device</h2>
 <p>The app keeps the following only on your device, in its private storage:</p>
@@ -135,8 +126,10 @@
     ask, to save, rename, delete or overwrite a file. You can refuse it and still open documents one at a
     time through the system file picker.
   </li>
-  <li><strong>Internet</strong> and <strong>network state</strong> &mdash; for ads and Remote Config only, as described above.</li>
-  <li><strong>Advertising ID</strong> &mdash; read by Google AdMob as described above.</li>
+  <li>
+    <strong>Internet</strong> and <strong>network state</strong> &mdash; used only for Firebase Remote
+    Config, as described above. No document ever leaves your device over the network.
+  </li>
 </ul>
 <p>
   Photos are chosen with Android's system photo picker, and photos are taken with your own camera app,
@@ -159,9 +152,10 @@
 
 <h2>Security</h2>
 <p>
-  Data created by the app is protected by Android's standard per-app sandbox. Information collected by
-  Google AdMob and Firebase is sent over encrypted connections and handled under Google's security
-  practices. Password-protected PDFs you create are encrypted with AES-256.
+  Data created by the app is protected by Android's standard per-app sandbox. The settings the app
+  downloads from Firebase travel over encrypted connections, and the information Firebase receives is
+  handled under Google's security practices. Password-protected PDFs you create are encrypted with
+  AES-256.
 </p>
 
 <h2>Changes to this policy</h2>
