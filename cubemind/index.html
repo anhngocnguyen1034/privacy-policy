@@ -63,8 +63,10 @@
 
 <h2>Information collected by third parties</h2>
 <p>
-  The app never asks for your name, email address, phone number, contacts or location, and there is no
-  registration or user profile. Google services collect some information automatically:
+  The app never asks for your name, email address, phone number, contacts or the location of your
+  device, and there is no registration or user profile. Google services collect some information
+  automatically, and because every request carries an IP address, Google can work out roughly which
+  region you are in:
 </p>
 <ul>
   <li>
@@ -77,8 +79,13 @@
     whether ads are turned on, so we can change how the app behaves without publishing an update.
   </li>
   <li>
+    <strong>Firebase Crashlytics</strong> &mdash; if the app crashes, a report with the place in the code
+    it stopped, the device model and the operating system version, so the bug can be fixed.
+  </li>
+  <li>
     <strong>Google AdMob</strong> &mdash; when ads are turned on, AdMob may collect your advertising ID,
-    IP address and information about the ads you see and tap, to show and measure ads.
+    your IP address and the approximate region it points to, and information about the ads you see and
+    tap, to choose and measure ads.
   </li>
 </ul>
 <p>
